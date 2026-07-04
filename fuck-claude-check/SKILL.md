@@ -14,13 +14,16 @@ The API evaluates multiple server-side signals (timezone, browser language, emoj
 
 ## Usage
 
-### Basic check (default English report)
+### Basic check (follows system language automatically)
 
 ```bash
-curl -s https://fuck-claude.vercel.app/api/check
+curl -s -H "Accept-Language: $(locale | awk -F'=' '/^LANG=/{split($2,a,"."); split(a[1],b,"_"); print b[1]}')" \
+  https://fuck-claude.vercel.app/api/check
 ```
 
-### Check with a specific language
+The output language matches the system locale: `zh` for Chinese systems, `en` for English, etc.
+
+### Override language explicitly
 
 ```bash
 curl -s -H "Accept-Language: zh" https://fuck-claude.vercel.app/api/check
