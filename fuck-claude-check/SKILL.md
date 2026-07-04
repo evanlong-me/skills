@@ -3,7 +3,6 @@ name: fuck-claude-check
 description: Detect whether a user appears to be a "Claude China user" via IP geo + request headers. Use whenever the user asks about Claude China restrictions, wants to check if they're flagged, suspects regional blocking, or wants to audit their own fingerprint. Also use when troubleshooting Claude region-lock issues, discussing Anthropic/Monica China policy, or testing VPN/proxy effectiveness against region detection.
 metadata:
   author: evanlong-me
-  version: "1.0.0"
 ---
 
 # Fuck Claude Check
