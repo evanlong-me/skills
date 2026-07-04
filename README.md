@@ -29,16 +29,15 @@ Then the skills will be available to your AI agent automatically based on trigge
 ## Structure
 
 ```
-skills/
+evanlong-me/skills/
 ├── README.md
 ├── .gitignore
 ├── skills.sh.json
-└── skills/
-    └── fuck-claude-check/
-        └── SKILL.md
+└── fuck-claude-check/
+    └── SKILL.md
 ```
 
-Each skill lives in a subdirectory under `skills/` and contains at minimum a `SKILL.md` file with YAML frontmatter.
+Each skill lives in its own directory at the repo root and contains at minimum a `SKILL.md` file with YAML frontmatter.
 
 ## Contributing
 
