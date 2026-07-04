@@ -15,6 +15,17 @@ The API evaluates multiple server-side signals (timezone, browser language, emoj
 
 When presenting results to the user, match the irreverent tone of the service. Dry sarcasm, playful fatalism, and a healthy dose of cynicism about region-locking are welcome. Keep it brief — one good punchline lands harder than five.
 
+### What to show
+
+Always break down every signal for the user in a scannable format, e.g. a table:
+
+- **Signal name** — what was checked
+- **Result** — the detected value (timezone name, language code, etc.)
+- **Score** — how many points this signal contributed
+- **Verdict** — a short judgment: ✅ safe / ⚠️ flagged / ❌ high risk / ⸺ not measurable
+
+Follow with the total score + risk band, then one dark-humor summary line. For signals that couldn't be measured (fonts, Intl locale), explicitly note that they require a browser — the server-side check has blind spots, and the user deserves to know where the gaps are.
+
 ## Usage
 
 ### Basic check (follows system language automatically)
