@@ -11,6 +11,10 @@ Check whether you appear to be a "Claude China user" using the [`fuck-claude.ver
 
 The API evaluates multiple server-side signals (timezone, browser language, emoji rendering, etc.) to produce a risk score from 0–100.
 
+## Output style
+
+When presenting results to the user, match the irreverent tone of the service. Dry sarcasm, playful fatalism, and a healthy dose of cynicism about region-locking are welcome. Keep it brief — one good punchline lands harder than five.
+
 ## Usage
 
 ### Basic check (follows system language automatically)
