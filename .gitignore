@@ -1,3 +1,8 @@
 node_modules/
 .DS_Store
 *.local
+
+# Consumption artifacts — this repo creates skills, not consumes them
+.agents/
+.claude/
+skills-lock.json
