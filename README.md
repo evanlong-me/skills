@@ -38,11 +38,23 @@ Check whether you appear to be a "Claude China user" via IP geo + request header
 
 ## Installation
 
+### 安装所有 skills
+
 ```bash
 npx skills add evanlong-me/skills
 ```
 
-Then the skills will be available to your AI agent automatically based on trigger phrases.
+### 只安装某一个 skill（推荐）
+
+```bash
+# 只安装 cleanmymac-x
+npx skills add evanlong-me/skills --skill cleanmymac-x
+
+# 只安装 fuck-claude-check
+npx skills add evanlong-me/skills --skill fuck-claude-check
+```
+
+安装后 skills 会自动根据 trigger phrases 被 AI agent 加载。
 
 ## Structure
 

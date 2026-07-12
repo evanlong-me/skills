@@ -506,8 +506,18 @@ bash /path/to/scripts/cmx.sh scan
 
 ### 安装
 
+#### 通过 skills.sh 安装（推荐）
+
+```bash
+# 安装本 skill 到 AI agent
+npx skills add evanlong-me/skills --skill cleanmymac-x
+```
+
+#### 手动配置 cmx 别名
+
 ```bash
 # 添加别名到 shell 配置
+# 将 /path/to 替换为实际路径
 echo 'alias cmx="bash /path/to/cleanmymac-x/scripts/cmx.sh"' >> ~/.zshrc
 source ~/.zshrc
 ```
