@@ -8,6 +8,13 @@
       "skills": [
         "fuck-claude-check"
       ]
+    },
+    {
+      "title": "Mac System Care",
+      "description": "Skills for macOS system maintenance, cleanup, and optimization, inspired by CleanMyMac X.",
+      "skills": [
+        "cleanmymac-x"
+      ]
     }
   ]
 }
